@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="chat-container">
+
+        <header>
+            <div>
+                <h2>AI Chatbot</h2>
+                <p>Powered by Groq and CrewAI</p>
+            </div>
+
+            <button id="clearBtn">Clear Chat</button>
+        </header>
+
+        <div id="chatBox">
+            <div class="message bot">
+                Hello! I am your AI assistant. How can I help you today?
+            </div>
+        </div>
+
+        <div id="typing" class="typing hidden">
+            AI is thinking...
+        </div>
+
+        <footer>
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Type your message..."
+                autocomplete="off"
+            >
+
+            <button id="sendBtn">Send</button>
+        </footer>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
