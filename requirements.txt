@@ -1,0 +1,6 @@
+flask
+crewai
+groq
+litellm
+python-dotenv
+gunicorn
